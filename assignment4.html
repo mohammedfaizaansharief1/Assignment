@@ -12,27 +12,27 @@
         <h1>Travel Reservation Form</h1>
         <h2>* denotes Mandatory</h2>
         <label for="fullname">Full Name*:</label>
-        <input type="text" placeholder="FirstName LastName"><br>
+        <input type="text" placeholder="FirstName LastName" required><br>
         <label for="Email">Email address*:</label>
-        <input type="text" placeholder="Email_address"><br>
+        <input type="text" placeholder="Email_address" required><br>
         <label for="tour package">Select Tour Package*:</label>
-        <select name="tour packages" id="tour packages">
+        <select name="tour packages" id="tour packages" required>
             <option value="Goa">Goa</option>
             <option value="Maldives">Maldives</option>
         </select><br>
         <label for="arrival date">Arrival Date*:</label>
-        <input type="date" name="arrival date" id="arrival date"><br>
+        <input type="date" name="arrival date" id="arrival date" required><br>
         <label for="no of persons">Number of Persons*:</label>
-        <input type="number" placeholder="UNKNOWN_TYPE"><br>
+        <input type="number" placeholder="UNKNOWN_TYPE" required><br>
         <label for="availing service">What would you want to avail?*</label><br>
-        Boarding<input type="checkbox" name="boarding" id="boarding"><br>
-        Fooding<input type="checkbox" name="fooding" id="fooding"><br>
-        Sight seeing<input type="checkbox" name="sightseeing" id="sightseeing"><br>
+        Boarding<input type="checkbox" name="service" id="boarding" required><br>
+        Fooding<input type="checkbox" name="service" id="fooding" required><br>
+        Sight seeing<input type="checkbox" name="service" id="sightseeing" required><br>
         <label for="discount">Discount Coupon code:</label>
         <input type="text" placeholder="UNKNOWN_TYPE"><br>
         <label for="termsandconditions">Terms and Condtions*:</label><br>
-        <input type="radio" name="termsandconditions1"> I agree
-        <input type="radio"name="termsandconditions1"> I disagree <br>
+        <input type="radio" name="termsandconditions1" required> I agree
+        <input type="radio"name="termsandconditions1" required> I disagree <br>
         <button type="submit">Complete Reservation</button>
     </form>
 </body>
